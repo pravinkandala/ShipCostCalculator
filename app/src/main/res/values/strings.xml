@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ShipCostCalculator</string>
+    <string name="weightLabel">Weight of the package</string>
+</resources>
