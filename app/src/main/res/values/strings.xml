@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">ShipCostCalculator</string>
     <string name="weightLabel">Weight of the package</string>
+    <string name="ouncesLabel">in Ounces</string>
+    <string name="zeroDollarAmount">$0.00</string>
+    <string name="zeroDollar">$0.00</string>
+    <string name="zeroDollarAm">$0.00</string>
 </resources>

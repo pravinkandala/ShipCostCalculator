@@ -17,7 +17,8 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:gravity="center_horizontal" />
+        android:gravity="center_horizontal"/>
+
 
     <EditText
         android:layout_width="wrap_content"
@@ -28,5 +29,81 @@
         android:layout_alignParentStart="true"
         android:layout_alignRight="@+id/textView"
         android:layout_alignEnd="@+id/textView"
-        android:gravity="center_horizontal" />
+        android:gravity="center_horizontal"
+        android:hint = "0">_
+        <requestFocus/>
+    </EditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/weightEditText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/weightEditText"
+        android:layout_alignEnd="@+id/weightEditText"
+        android:gravity="center_horizontal"
+        android:hint="in Ounces" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Base Cost:"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="37dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/zeroDollarAmount"
+        android:id="@+id/baseCostEditText"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="AddedCost:"
+        android:id="@+id/textView5"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/zeroDollar"
+        android:id="@+id/addedCostEditLabel"
+        android:layout_alignTop="@+id/textView5"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Total Shipping Cost:"
+        android:id="@+id/textView6"
+        android:layout_below="@+id/textView5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/zeroDollarAm"
+        android:id="@+id/totalShippingCostEditText"
+        android:layout_below="@+id/addedCostEditLabel"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center" />
 </RelativeLayout>
