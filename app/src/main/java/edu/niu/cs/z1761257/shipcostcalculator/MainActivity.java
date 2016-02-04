@@ -8,6 +8,8 @@ import android.text.TextWatcher;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import java.text.DecimalFormat;
+
 public class MainActivity extends Activity {
 
     //Data Members
@@ -48,8 +50,24 @@ public class MainActivity extends Activity {
 
         @Override
         public void afterTextChanged(Editable s) {
+        try{
+            itemShipped.setWeight(Integer.parseInt(s.toString()));
 
         }
+        catch(NumberFormatException e) {
+            itemShipped.setWeight(0);
+            }//end of exception blocks
+
+            displayShipping();
+
+        }//end of afterTextChanged
+
+      private void displayShipping(){
+          DecimalFormat df = new DecimalFormat("0.00");
+          baseCostTV.setText("$"+df.format(itemShipped.getBaseCost()));
+          addedCostTV.setText("$"+df.format(itemShipped.getAddedCost()));
+          totalCostTV.setText("$"+df.format(itemShipped.getTotalCost()));
+      }  //end of displayShipping function
     }; //end of weightTextWatcher -- this is not a method (we are just creating object)
 
 
