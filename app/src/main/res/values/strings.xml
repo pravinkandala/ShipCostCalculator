@@ -5,4 +5,12 @@
     <string name="zeroDollarAmount">$0.00</string>
     <string name="zeroDollar">$0.00</string>
     <string name="zeroDollarAm">$0.00</string>
+    <string name="helpText"> This application calculates the cost of shipping an item. \n\n
+The base cost for shipping an item is $3.00 for the first 16 ounces. An additional
+cost of $0.50 will be added for each additional 4 ounces for items that weigh more
+than 16 ounces. </string>
+
+    <string name="helpLabel">Help</string>
+
+    <string name="returnString">Return to Calculator</string>
 </resources>

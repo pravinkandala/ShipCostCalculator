@@ -1,10 +1,12 @@
 package edu.niu.cs.z1761257.shipcostcalculator;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -71,7 +73,10 @@ public class MainActivity extends Activity {
     }; //end of weightTextWatcher -- this is not a method (we are just creating object)
 
 
-
+        public void showHelp(View view){
+            Intent helpIntent = new Intent( MainActivity.this, HelpActivity.class );
+            startActivity(helpIntent);
+        }
 
 
 }//end of MainActivity

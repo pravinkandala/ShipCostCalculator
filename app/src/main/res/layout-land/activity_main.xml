@@ -67,10 +67,10 @@
         android:layout_height="wrap_content"
         android:id="@+id/gridLayout"
         android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
         android:layout_toRightOf="@+id/linearLayout"
-        android:layout_toEndOf="@+id/linearLayout"
-        android:layout_marginLeft="57dp"
-        android:layout_marginStart="57dp">
+        android:layout_toEndOf="@+id/linearLayout">
 
         <TextView
             android:layout_width="wrap_content"
@@ -145,6 +145,15 @@
             android:layout_column="5" />
 
     </GridLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/helpLabel"
+        android:id="@+id/helpButton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="showHelp" />
 
 
 </RelativeLayout>
